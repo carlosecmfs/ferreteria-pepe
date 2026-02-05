@@ -180,3 +180,8 @@ div.contact {
 .services-grid img {
     width: 50px;
 }
+
+h3 {
+    color: rgba(0, 34, 102, 1);
+    text-align: center;
+}

@@ -139,3 +139,44 @@ div.contact {
     max-width: 100%;
   }
 }
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card{
+  background: white;
+  border-radius: 14px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  font-weight: 600;
+}
+
+.service-card.experience{
+  grid-column: 2 / 4;   
+  background: rgba(0, 34, 102, 1);
+  color: #ffffe6;
+}
+
+@media (max-width: 800px){
+  .services-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card.experience{
+    grid-column: 1 / -1; 
+  }
+}
+
+@media (max-width: 480px){
+  .services-grid{
+    grid-template-columns: 1fr;
+  }
+} 
+
+.services-grid img {
+    width: 50px;
+}
